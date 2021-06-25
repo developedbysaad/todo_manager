@@ -16,4 +16,11 @@ class UsersController < ApplicationController
     )
     render plain: "Hey, a new user has been created with the id #{new_user.id}"
   end
+
+  def login
+    email = params[:email]
+    password = params[:password]
+    session = User.where(email: email, password: password).exists? ? true : false
+    render plain: session
+  end
 end
