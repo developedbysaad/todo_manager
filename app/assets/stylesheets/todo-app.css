@@ -54,6 +54,11 @@ font-family: sans-serif;
   margin: 0px 5px 0px 0px;
 }
 
+.todo-list__title-part{
+  font-weight: 600;
+  margin: 0px 5px 0px 0px;
+}
+
 
 .todo-list__remaining-count{
   font-size: 16px;
@@ -73,9 +78,14 @@ font-family: sans-serif;
   height: 16px;
 }
 
+
 .todo-list__item-part{
   font-size: 18px;
   margin: 0px 5px 0px 5px;
+
+}
+.checked{
+  text-decoration: line-through;
 }
 
 .todo-list__item-date{
