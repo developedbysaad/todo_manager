@@ -1,11 +1,11 @@
 
   <main class="todo-list">
     <h1 class="todo-list__heading">My To-do List</h1>
-    <label class="todo-list__add">
-      <input class="todo-list__text-field" type="text" required placeholder="What's next?">
-      <input class="todo-list__date" type="date" value=>
+    <form class="todo-list__add" action="/todos" method="POST">
+      <input class="todo-list__text-field" type="text" name="todo_text" required placeholder="What's next?">
+      <input class="todo-list__date" type="date" name="due_date" required>
       <input class="todo-list__btn" type="submit" value="Add">
-    </label>
+    </form>
     <section>
 
 
