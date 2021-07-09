@@ -1,7 +1,5 @@
 # todos_controller.rb
 class TodosController < ApplicationController
-  skip_before_action :verify_authenticity_token
-
   def index
     render "index"
   end
@@ -10,7 +8,6 @@ class TodosController < ApplicationController
     id = params[:id]
     todo = Todo.find(id)
     render "todo"
-    #render plain: todo.to_pleasant_string
   end
 
   def create
@@ -30,6 +27,13 @@ class TodosController < ApplicationController
     todo = Todo.find(id)
     todo.completed = completed
     todo.save!
+    redirect_to todos_path
+  end
+
+  def destroy
+    id = params[:id]
+    todo = Todo.find(id)
+    todo.destroy
     redirect_to todos_path
   end
 end

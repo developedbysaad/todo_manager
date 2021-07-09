@@ -1,11 +1,11 @@
 
   <main class="todo-list">
     <h1 class="todo-list__heading">My To-do List</h1>
-    <form class="todo-list__add" action="/todos" method="POST">
-      <input class="todo-list__text-field" type="text" name="todo_text" required placeholder="What's next?">
-      <input class="todo-list__date" type="date" name="due_date" required>
-      <input class="todo-list__btn" type="submit" value="Add">
-    </form>
+    <%= form_with(url: "/todos/", method: "POST", class: "todo-list__add") do %>
+    <%= text_field_tag("todo_text", nil, placeholder: "What's next?", class: "todo-list__text-field", required: true) %>
+    <%= date_field_tag("due_date", nil, class: "todo-list__date", required: true) %>
+    <%= submit_tag("Add", placeholder: "What's next?", class: "todo-list__btn") %>
+    <% end %>
     <section>
 
 
