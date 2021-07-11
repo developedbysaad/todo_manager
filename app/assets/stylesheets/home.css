@@ -1,0 +1,16 @@
+.home__page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.home__title {
+  font-size: 20px;
+  margin-bottom:30px;
+  margin-top:50px;
+}
+
+.home__authenticate {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
