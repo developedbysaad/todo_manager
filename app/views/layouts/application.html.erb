@@ -16,6 +16,11 @@
       Hi!, <%= @current_user.first_name %>
     </p><hr class="line">
     <% end %>
+    <% if flash[:error] %>
+    <p class="flash-error">
+    <%= flash[:error] %>
+    </p>
+    <% end %>
     <%= yield %>
   </body>
 </html>

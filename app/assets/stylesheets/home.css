@@ -31,3 +31,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.flash-error {
+  color: darkred;
+  margin-top: 25px;
+	margin-bottom: 20;
+  font-size: 16px;
+  text-align: center;
+}
