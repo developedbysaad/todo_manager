@@ -2,9 +2,9 @@
   <main class="todo-list">
     <h1 class="todo-list__heading">My To-do List</h1>
     <%= form_with(url: "/todos/", method: "POST", class: "todo-list__add") do %>
-    <%= text_field_tag("todo_text", nil, placeholder: "What's next?", class: "todo-list__text-field", required: true) %>
-    <%= date_field_tag("due_date", nil, class: "todo-list__date", required: true) %>
-    <%= submit_tag("Add", placeholder: "What's next?", class: "todo-list__btn") %>
+    <%= text_field_tag("todo_text", nil, placeholder: "What's next?", class: "todo-list__text-field") %>
+    <%= date_field_tag("due_date", nil, class: "todo-list__date") %>
+    <%= submit_tag("Add", class: "todo-list__btn") %>
     <% end %>
     <section>
 
