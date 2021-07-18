@@ -1,24 +1,25 @@
-# README
+# Todo Manager
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Todo manager web application
+![Screenshot from http://saad-todo-manager-wd-201.herokuapp.com](https://github.com/saad5133/todo_manager/blob/master/app/assets/images/todo-manager.jpg)
 
-Things you may want to cover:
+Deployed at http://saad-todo-manager-wd-201.herokuapp.com
 
-* Ruby version
 
-* System dependencies
+### About Todo Manager
 
-* Configuration
+Todo Manager is an application that lets you make a check list of the things you need to do in your day or the upcoming days.
+* You can add tasks that you need to do.
+* Once done click the check-box to mark it complete.
+* If needed to remove the item from the list click ![the bin icon](https://github.com/saad5133/todo_manager/blob/master/app/assets/images/delete.png) to delete it.
 
-* Database creation
 
-* Database initialization
+## Credentials For Demo :
+Deployed at http://saad-todo-manager-wd-201.herokuapp.com
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+### Guest Account:
 
-* Deployment instructions
+Email: `guestuser@gmail.com`
 
-* ...
+Password: `guest`
